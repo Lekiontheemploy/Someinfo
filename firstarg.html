@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>2 Ảnh – Mỗi ảnh phát 1 âm thanh riêng</title>
+    <style>
+        img {
+            width: 250px;
+            margin: 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Ảnh 1 -->
+<img id="img1" src="https://archive.org/download/catastrophe-crow-64/!Catastrophe%20Crow%2064%20[v1.5].jpg">
+
+<!-- Ảnh 2 -->
+<img id="img2" src="https://media.wired.com/photos/5933051752d99d6b984e0e7a/master/pass/RedLynx-Trials-Evolution-13.png">
+
+<!-- Âm thanh 1 -->
+<audio id="sound1" src="https://raw.githubusercontent.com/Lekiontheemploy/Someinfo/refs/heads/main/hint.wav"></audio>
+
+<!-- Âm thanh 2 -->
+<audio id="sound2" src="https://raw.githubusercontent.com/Lekiontheemploy/Someinfo/refs/heads/main/link.wav"></audio>
+
+<script>
+    // Ảnh 1 bấm -> âm thanh 1
+    document.getElementById("img1").onclick = function() {
+        let audio = document.getElementById("sound1");
+        audio.currentTime = 0;
+        audio.play();
+    };
+
+    // Ảnh 2 bấm -> âm thanh 2
+    document.getElementById("img2").onclick = function() {
+        let audio = document.getElementById("sound2");
+        audio.currentTime = 0;
+        audio.play();
+    };
+</script>
+
+</body>
+</html>
