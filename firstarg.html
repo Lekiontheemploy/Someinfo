@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>2 Ảnh – Mỗi ảnh phát 1 âm thanh riêng</title>
+    <style type="text/css"> 
+        .ol {
+            margin-right: 400px;
+    </style>
+</head>
+<body>
+<h1>ARG</h1>
+<!-- Ảnh 1 -->
+<img id="img1" src="https://archive.org/download/catastrophe-crow-64/!Catastrophe%20Crow%2064%20[v1.5].jpg" width="200" height="150">
+<h2> ARG là gì?</h2>
+<h3 class="ol"> Trò chơi thực tế thay thế ( ARG ) là một câu chuyện tương tác được kết nối mạng , sử dụng thế giới thực làm nền tảng và sử dụng phương pháp kể chuyện đa phương tiện để truyền tải một câu chuyện có thể thay đổi theo ý tưởng hoặc hành động của người chơi.</h3>
+<img src="https://media.newyorker.com/photos/59a872860da97a61599cf091/master/pass/Barron-Petscop-2.jpg" width="800" height="500">
+<h2> Sự định nghĩa</h2>
+<h3 class="ol"> Hầu hết các ARG không có bất kỳ quy tắc cố định nào—người chơi khám phá các quy tắc và ranh giới của trò chơi thông qua thử nghiệm và sai sót—và không yêu cầu người chơi phải đảm nhận danh tính hư cấu hoặc nhập vai ngoài việc giả vờ tin vào thực tế của các nhân vật mà họ tương tác (ngay cả khi các trò chơi mà người chơi đóng vai 'chính họ' là một biến thể lâu đời của thể loại này).</h3>
+<img src="https://static0.gamerantimages.com/wordpress/wp-content/uploads/2021/10/inscryption-feature-screenshots.jpg?w=1600&h=900&fit=crop)" width="800" height="500">
+<h2> Quan điểm học thuật</h2>
+<h3 class="ol"> Nhìn chung, giới học thuật rất hứng thú với tiềm năng tổ chức hiệu quả của ARG. Nhìn chung, nhiều tổ chức, chẳng hạn như doanh nghiệp, tổ chức phi lợi nhuận, cơ quan chính phủ và trường học, "có thể học hỏi từ những phương pháp hay nhất và bài học kinh nghiệm của ARG để tận dụng phương tiện truyền thông mới và giải quyết vấn đề tập thể". Do đó, việc triển khai ARG trong những bối cảnh khác nhau này bao gồm việc tìm ra những phương pháp hay nhất để trau dồi các yếu tố hợp tác, đa phương tiện của ARG cho các tổ chức tương ứng.</h3>
+
+<!-- Ảnh 2 -->
+<img id="img2" src="https://media.wired.com/photos/5933051752d99d6b984e0e7a/master/pass/RedLynx-Trials-Evolution-13.png" width="200" height="150">
+
+<!-- Âm thanh 1 -->
+<audio id="sound1" src="https://raw.githubusercontent.com/Lekiontheemploy/Someinfo/refs/heads/main/hint.wav"></audio>
+
+<!-- Âm thanh 2 -->
+<audio id="sound2" src="https://raw.githubusercontent.com/Lekiontheemploy/Someinfo/refs/heads/main/link.wav"></audio>
+
+<script>
+    // Ảnh 1 bấm -> âm thanh 1
+    document.getElementById("img1").onclick = function() {
+        let audio = document.getElementById("sound1");
+        audio.currentTime = 0;
+        audio.play();
+    };
+
+    // Ảnh 2 bấm -> âm thanh 2
+    document.getElementById("img2").onclick = function() {
+        let audio = document.getElementById("sound2");
+        audio.currentTime = 0;
+        audio.play();
+    };
+</script>
+
+</body>
+</html>
